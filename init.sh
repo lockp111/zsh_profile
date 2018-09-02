@@ -10,3 +10,4 @@ sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/i
 chsh -s /bin/zsh
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 cp zsh_profile ~/.zshrc
+cp -r ./themes ~/.oh-my-zsh/custom/
