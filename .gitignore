@@ -1,0 +1,4 @@
+plugins/example/
+*example*
+.DS_Store
+zsh-syntax-highlighting/
