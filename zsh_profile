@@ -65,7 +65,6 @@ plugins=(
   git
   golang
   z
-  npm
   docker
   docker-compose
   zsh-syntax-highlighting
