@@ -1,7 +1,9 @@
 # zsh_profile
 
 ## For Mac OS
-## Install
+### Dependencies
+ - brew
+### Install
 ```bash
 $ sh ./init.sh
 ```
