@@ -1,5 +1,6 @@
 #!/bin/bash
-brew install zsh
+command -v brew >/dev/null 2>&1 || { echo >&2 "brew is not installed"; exit 1; }
+
 brew cask install iterm2
 brew install fzf
 
@@ -8,9 +9,8 @@ cd fonts && sh ./install.sh
 rm -rf fonts
 
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-sudo chsh -s /bin/zsh
-
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 
-cp zsh_profile ~/.zshrc
+cp -f zsh_profile ~/.zshrc
 cp -rf ./themes ~/.oh-my-zsh/custom/
+chsh -s /bin/zsh
