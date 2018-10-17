@@ -13,4 +13,5 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 
 cp -f zsh_profile ~/.zshrc
 cp -rf ./themes ~/.oh-my-zsh/custom/
+cp -f ./com.googlecode.iterm2.plist ~/Library/Preferences/
 chsh -s /bin/zsh
