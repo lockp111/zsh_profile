@@ -2,8 +2,8 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH=$HOME/.oh-my-zsh
-export FZF_BASE=$HOME/.oh-my-zsh/custom/plugins/fzf
+export ZSH="/Users/harman/.oh-my-zsh"
+export FZF_BASE=~/.oh-my-zsh/custom/plugins/fzf
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
@@ -101,7 +101,16 @@ export LANG=en_US.UTF-8
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 zstyle -e ':completion:*:(ssh|scp|sftp):hosts' hosts 'reply=(${=${${(f)"$(cat {/etc/,~/.ssh/known_}hosts(|2)(N) /dev/null)"}%%[# ]*}//,/ })'
-export PATH=$PATH:/usr/local/sbin:/usr/local/bin
+
+export PATH=/usr/local/opt/node@8/bin:$PATH:$HOME/go/bin
+export GPG_TTY=$(tty)
+
 alias l='ls -aF'
+alias em='/Applications/Emacs.app/Contents/MacOS/Emacs'
+alias ssow='export http_proxy=http://127.0.0.1:1087;export https_proxy=http://127.0.0.1:1087;'
+alias unss='unset http_proxy && unset https_proxy'
+alias ethWallet='open -a /Applications/Ethereum\ Wallet.app/ --args --rpc http://13.230.187.71:8545'
+alias px4='proxychains4'
+alias rm="trash"
 alias fp="fzf --preview"
-alias fpc="fzf --preview 'cat {}'"
+alias mysql="mycli"
